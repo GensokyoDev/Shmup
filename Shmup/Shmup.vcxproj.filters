@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ResourceCompile Include="Shmup.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{996fbfa7-d5c5-4919-bd37-b5a51073bab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{7e1bbd18-2142-4ea0-b471-68cc7ad03fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\images">
+      <UniqueIdentifier>{05702033-4fe0-42bb-b8f3-6dd71ba5757d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\images\playercharacters">
+      <UniqueIdentifier>{4a708f17-c61e-416d-9a53-6ed0a3fceada}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\playercharacters\2husprites.png">
+      <Filter>Resources\images\playercharacters</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\PlayerCharacter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Projectile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sound.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ArtManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Boss.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enemy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HandleEvents.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\HandleInput.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\PlayerCharacter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Projectile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shmup.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sound.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ArtManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Boss.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bullet.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControlledFigure.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enemy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HandleEvents.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HandleInput.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
