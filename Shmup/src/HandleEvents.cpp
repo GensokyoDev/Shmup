@@ -6,7 +6,7 @@ std::vector<int> keysPressed;
 
 HandleEvents::HandleEvents(sf::RenderWindow &window, int state)
 {
-	keysPressed.empty();
+	//keysPressed.empty();
 
 	bool isPressedLeft = false;
 	bool isPressedRight = false;
