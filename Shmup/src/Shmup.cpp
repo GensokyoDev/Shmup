@@ -20,7 +20,6 @@ int main()
 	// touhou sprite test
 	sf::Texture texture;
 	texture.setSmooth(true);
-	//texture.setSmooth(true);
 	if (!texture.loadFromFile("Resources/images/playercharacters/2husprites.png"))
 	{
 		// error...
@@ -47,7 +46,7 @@ int main()
 		}
 		frameCounter++;
 		
-
+		// Handle all possible events
 		HandleEvents eventHandler(window, state);
 		
 
