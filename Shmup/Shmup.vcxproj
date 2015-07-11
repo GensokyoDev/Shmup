@@ -39,7 +39,9 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <NuGetPackageImportStamp>f328b537</NuGetPackageImportStamp>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -54,13 +56,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Computer Science n Studie n Math\programming\sfml\SFML-2.2-sources\SFML-2.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\programming\Git\Shmup\Dependencies; C:\programming\Git\Shmup\Shmup\Header Files;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Computer Science n Studie n Math\programming\sfml\build\lib\debug</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-network-d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\programming\Git\Shmup\Dependencies\SFML;C:\programming\Git\Shmup\Dependencies\GL;C:\programming\Git\Shmup\Dependencies\SOIL\Debug;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;sfml-network-d.lib;opengl32.lib;glew32d.lib;SOIL.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -85,36 +87,44 @@
     <ResourceCompile Include="Shmup.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="images\playercharacters\2husprites.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Header Files\ArtManager.h" />
+    <ClInclude Include="Header Files\Boss.h" />
+    <ClInclude Include="Header Files\Collision.h" />
+    <ClInclude Include="Header Files\ControlledCharacter.h" />
+    <ClInclude Include="Header Files\Enemy.h" />
+    <ClInclude Include="Header Files\EventHandler.h" />
+    <ClInclude Include="Header Files\FrameCounter.h" />
+    <ClInclude Include="Header Files\InputHandler.h" />
+    <ClInclude Include="Header Files\Projectile.h" />
+    <ClInclude Include="Header Files\Reimu.h" />
+    <ClInclude Include="Header Files\Sound.h" />
+    <ClInclude Include="Header Files\Stage.h" />
+    <ClInclude Include="Header Files\Window.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="src\ArtManager.h" />
-    <ClInclude Include="src\Boss.h" />
-    <ClInclude Include="src\Enemy.h" />
-    <ClInclude Include="src\HandleEvents.h" />
-    <ClInclude Include="src\HandleInput.h" />
-    <ClInclude Include="src\PlayerCharacter.h" />
-    <ClInclude Include="src\Projectile.h" />
-    <ClInclude Include="src\Sound.h" />
-    <ClInclude Include="src\Stage.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ArtManager.cpp" />
-    <ClCompile Include="src\Boss.cpp" />
-    <ClCompile Include="src\Bullet.cpp" />
-    <ClCompile Include="src\ControlledFigure.cpp" />
-    <ClCompile Include="src\Enemy.cpp" />
-    <ClCompile Include="src\HandleEvents.cpp" />
-    <ClCompile Include="src\HandleInput.cpp" />
-    <ClCompile Include="src\PlayerCharacter.cpp" />
-    <ClCompile Include="src\Projectile.cpp" />
-    <ClCompile Include="src\Shmup.cpp" />
-    <ClCompile Include="src\Sound.cpp" />
-    <ClCompile Include="src\Source.cpp" />
-    <ClCompile Include="src\Stage.cpp" />
+    <ClCompile Include="Source Files\Collision.cpp" />
+    <ClCompile Include="Source Files\ArtManager.cpp" />
+    <ClCompile Include="Source Files\Boss.cpp" />
+    <ClCompile Include="Source Files\ControlledCharacter.cpp" />
+    <ClCompile Include="Source Files\Enemy.cpp" />
+    <ClCompile Include="Source Files\EventHandler.cpp" />
+    <ClCompile Include="Source Files\feedback.cpp" />
+    <ClCompile Include="Source Files\FrameCounter.cpp" />
+    <ClCompile Include="Source Files\GeometryShader.cpp" />
+    <ClCompile Include="Source Files\InputHandler.cpp" />
+    <ClCompile Include="Source Files\Projectile.cpp" />
+    <ClCompile Include="Source Files\Reimu.cpp" />
+    <ClCompile Include="Source Files\Shmup.cpp" />
+    <ClCompile Include="Source Files\Sound.cpp" />
+    <ClCompile Include="Source Files\Stage.cpp" />
+    <ClCompile Include="Source Files\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\images\playercharacters\2husprites.png" />
+    <Image Include="Resources\images\playercharacters\sample.png" />
+    <Image Include="Resources\images\playercharacters\sample2.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
 </Project>
